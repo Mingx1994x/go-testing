@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testArea01_Swiper</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container-fluid container-lg">
+      <h1>我是Swiper測試區</h1>
+
+      <!-- card -->
+      <div class="row">
+        <div class="col-4 d-flex flex-column">
+          <h2>精選文章</h2>
+          <div class="mt-auto"></div>
+          <div class="navigation-btn-group d-flex justify-content-between">
+            <button class="btn">&lt;</button>
+            <button class="btn">&gt;</button>
+          </div>
+        </div>
+        <div class="col-8 d-flex">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1723791749202-561abfb9b81a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              style="height: 192px"
+              alt="..."
+            />
+            <div class="card-body d-flex flex-column align-items-start">
+              <h5 class="card-title">私人島嶼的露營奇遇記</h5>
+              <p class="card-text">
+                遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+              </p>
+              <a href="#" class="btn mt-auto">Read More</a>
+            </div>
+          </div>
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1723227300708-1ff74add4195?q=80&w=2621&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              style="height: 192px"
+              alt="..."
+            />
+            <div class="card-body d-flex flex-column align-items-start">
+              <h5 class="card-title">窺探米其林三星主廚的絕密手藝</h5>
+              <p class="card-text">
+                在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+              </p>
+              <a href="#" class="btn mt-auto">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- demo swiper1 -->
+      <!-- <div class="row mt-5 d-flex">
+        <div class="col-4">
+          <h2 class="fs-2 fw-900">demoSwiper_ Pagination fraction</h2>
+        </div>
+        <div class="col-8">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723791749202-561abfb9b81a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">私人島嶼的露營奇遇記</h5>
+                    <p class="card-text">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723227300708-1ff74add4195?q=80&w=2621&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">窺探米其林三星主廚的絕密手藝</h5>
+                    <p class="card-text">
+                      在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723791749202-561abfb9b81a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">私人島嶼的露營奇遇記</h5>
+                    <p class="card-text">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723227300708-1ff74add4195?q=80&w=2621&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">窺探米其林三星主廚的絕密手藝</h5>
+                    <p class="card-text">
+                      在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723791749202-561abfb9b81a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">私人島嶼的露營奇遇記</h5>
+                    <p class="card-text">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- custom swiper2 助教範例-->
+      <div class="row mt-5">
+        <div class="col-4 d-flex flex-column justify-content-between">
+          <h2 class="fs-2 fw-900">精選文章</h2>
+          <div>
+            <div class="swiper-pagination-custom mb-32"></div>
+            <div
+              class="swiper-pagination d-flex justify-content-between position-relative"
+            >
+              <div
+                class="swiper-prev d-inline-block px-3 py-1 border border-1 border-dark rounded-5"
+              >
+                <i class="fs-3">&lt;</i>
+              </div>
+              <div
+                class="swiper-next d-inline-block px-3 py-1 border border-1 border-dark rounded-5"
+              >
+                <i class="fs-3">&gt;</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="swiper custom-swiper mb-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide pb-4">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/article-banner.png?raw=true"
+                  class="rounded-1"
+                  alt="圖片1"
+                />
+                <h3 class="fs-5 mt-4 fw-900">私人島嶼的露營奇遇記</h3>
+                <p class="mt-2 mb-4 fw-600 gray-600">
+                  遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                </p>
+                <a href="#">Read More</a>
+              </div>
+              <div class="swiper-slide pb-4">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/articles-2.png?raw=true"
+                  class="rounded-1"
+                  alt="圖片2"
+                />
+                <h3 class="fs-5 mt-4 fw-900">窺探米其林三星主廚的絕密手藝</h3>
+                <p class="mt-2 mb-4 fw-600 gray-600">
+                  在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#">Read More</a>
+                  <p class="only-staff py-1 px-2 rounded-1">會員專屬</p>
+                </div>
+              </div>
+              <div class="swiper-slide pb-4">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/article-banner.png?raw=true"
+                  class="rounded-1"
+                  alt="圖片1"
+                />
+                <h3 class="fs-5 mt-4 fw-900">私人島嶼的露營奇遇記</h3>
+                <p class="mt-2 mb-4 fw-600 gray-600">
+                  遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                </p>
+                <a href="#">Read More</a>
+              </div>
+              <div class="swiper-slide pb-4">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/articles-2.png?raw=true"
+                  class="rounded-1"
+                  alt="圖片2"
+                />
+                <h3 class="fs-5 mt-4 fw-900">窺探米其林三星主廚的絕密手藝</h3>
+                <p class="mt-2 mb-4 fw-600 gray-600">
+                  在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#">Read More</a>
+                  <p class="only-staff py-1 px-2 rounded-1">會員專屬</p>
+                </div>
+              </div>
+              <div class="swiper-slide pb-4">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/article-banner.png?raw=true"
+                  class="rounded-1"
+                  alt="圖片1"
+                />
+                <h3 class="fs-5 mt-4 fw-900">私人島嶼的露營奇遇記</h3>
+                <p class="mt-2 mb-4 fw-600 gray-600">
+                  遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                </p>
+                <a href="#">Read More</a>
+              </div>
+              <div class="swiper-slide pb-4">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/articles-2.png?raw=true"
+                  class="rounded-1"
+                  alt="圖片2"
+                />
+                <h3 class="fs-5 mt-4 fw-900">窺探米其林三星主廚的絕密手藝</h3>
+                <p class="mt-2 mb-4 fw-600 gray-600">
+                  在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#">Read More</a>
+                  <p class="only-staff py-1 px-2 rounded-1">會員專屬</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- custom swiper3模仿試做 -->
+      <!-- <div class="row mt-5">
+        <div class="col-3 d-flex flex-column">
+          <h2 class="fs-2 fw-900 mb-auto">客製化swiper</h2>
+        </div>
+        <div class="col-9">
+          <div class="swiper customSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-auto">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723791749202-561abfb9b81a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">私人島嶼的露營奇遇記</h5>
+                    <p class="card-text">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide h-auto">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723227300708-1ff74add4195?q=80&w=2621&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">窺探米其林三星主廚的絕密手藝</h5>
+                    <p class="card-text">
+                      在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide h-auto">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723791749202-561abfb9b81a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">私人島嶼的露營奇遇記</h5>
+                    <p class="card-text">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide h-auto">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723227300708-1ff74add4195?q=80&w=2621&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">窺探米其林三星主廚的絕密手藝</h5>
+                    <p class="card-text">
+                      在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide h-auto">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723791749202-561abfb9b81a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">私人島嶼的露營奇遇記</h5>
+                    <p class="card-text">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide h-auto">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723227300708-1ff74add4195?q=80&w=2621&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">窺探米其林三星主廚的絕密手藝</h5>
+                    <p class="card-text">
+                      在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- css-mode 模仿 -->
+
+      <div class="row mt-5">
+        <div class="col-3 d-flex flex-column">
+          <h2>css-mode</h2>
+          <div class="nav-btn mt-auto d-flex justify-content-evenly">
+            <div class="swiperBtn-next border-3 border-dark rounded-circle p-3">
+              &lt;
+            </div>
+            <div class="swiperBtn-prev border-3 border-dark rounded-circle p-3">
+              &gt;
+            </div>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="swiper customSwiper-cssMode">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723791749202-561abfb9b81a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">私人島嶼的露營奇遇記</h5>
+                    <p class="card-text">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723227300708-1ff74add4195?q=80&w=2621&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">窺探米其林三星主廚的絕密手藝</h5>
+                    <p class="card-text">
+                      在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723791749202-561abfb9b81a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">私人島嶼的露營奇遇記</h5>
+                    <p class="card-text">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723227300708-1ff74add4195?q=80&w=2621&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">窺探米其林三星主廚的絕密手藝</h5>
+                    <p class="card-text">
+                      在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723791749202-561abfb9b81a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">私人島嶼的露營奇遇記</h5>
+                    <p class="card-text">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1723227300708-1ff74add4195?q=80&w=2621&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    style="height: 192px"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title">窺探米其林三星主廚的絕密手藝</h5>
+                    <p class="card-text">
+                      在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                    </p>
+                    <a href="#" class="btn mt-auto">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

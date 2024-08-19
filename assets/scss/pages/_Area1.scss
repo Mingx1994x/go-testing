@@ -1,0 +1,98 @@
+body {
+    font-family: "Noto Serif TC", serif;
+    line-height: 1.5;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.gray-600 {
+    color: #6c757d;
+}
+
+.swiper a {
+    font-size: 20px;
+    line-height: 2;
+    color: #569573;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.swiper-slide {
+    border-bottom: 1px solid #6c757d;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 192px;
+    object-fit: cover;
+}
+
+.swiper-pagination {
+    width: 232px;
+    position: relative;
+}
+
+.swiper-pagination::after {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #6c757d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper-prev:hover {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.swiper-button-disabled {
+    color: #dee2e6;
+    border-color: #dee2e6 !important;
+}
+
+.swiper-button-disabled:hover {
+    cursor: default;
+    background-color: initial !important;
+}
+
+.swiper-next:hover {
+    background-color: #6c757d;
+    color: #DEE2E6;
+}
+
+.only-staff {
+    background: #e8e3da;
+}
+
+
+.swiperBtn-next {
+    &:hover {
+        background-color: #6c757d;
+        color: #DEE2E6;
+    }
+}
+
+.swiperBtn-prev {
+    &:hover {
+        background-color: #6c757d;
+        color: #DEE2E6;
+    }
+}

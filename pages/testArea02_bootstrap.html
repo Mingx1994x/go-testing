@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>textArea1: list-group & js action</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <h1 class="index-title">我是測試區</h1>
+    <div class="d-flex">
+      <div class="assign-menu w-25">
+        <div class="topArea mb-3">
+          <button
+            class="btn dropdown-toggle ps-0 fw-bold"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            All(4)
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">Action</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another action</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here </a>
+            </li>
+          </ul>
+        </div>
+        <div class="list-group" id="list-tab" role="tablist">
+          <a
+            href="#list-message1"
+            class="list-group-item list-group-item-action active"
+            id="list-message1-list"
+            data-bs-toggle="list"
+            role="tab"
+            aria-controls="list-message1"
+          >
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Chapter Assignment 2</h5>
+              <small>4 hrs ago</small>
+            </div>
+            <p class="mb-1">Please check this file…</p>
+            <small>Emily Wang</small>
+          </a>
+          <a
+            href="#list-message2"
+            class="list-group-item list-group-item-action"
+            id="list-message2-list"
+            data-bs-toggle="list"
+            role="tab"
+            aria-controls="list-message2"
+          >
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Chapter Assignment 1</h5>
+              <small class="text-body-secondary">12 hrs ago</small>
+            </div>
+            <p class="mb-1">My Homework</p>
+            <small class="text-body-secondary">David Xu</small>
+          </a>
+          <a
+            href="#list-message3"
+            class="list-group-item list-group-item-action"
+            id="list-message3-list"
+            data-bs-toggle="list"
+            role="tab"
+            aria-controls="list-message3"
+          >
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Final Assignment</h5>
+              <small class="text-body-secondary">18 hrs ago</small>
+            </div>
+            <p class="mb-1">Have a problem with this…</p>
+            <small class="text-body-secondary">Tony Wei</small>
+          </a>
+          <a
+            href="#list-message4"
+            class="list-group-item list-group-item-action"
+            id="list-message4-list"
+            data-bs-toggle="list"
+            role="tab"
+            aria-controls="list-message4"
+          >
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Final Assignment</h5>
+              <small class="text-body-secondary">19 hrs ago</small>
+            </div>
+            <p class="mb-1">Did I do it right?</p>
+            <small class="text-body-secondary">Christina Lin</small>
+          </a>
+        </div>
+      </div>
+      <div class="assign-comment w-75">
+        <p class="text-end">2comment</p>
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="list-message1"
+            role="tabpanel"
+            aria-labelledby="list-message1-list"
+          >
+            Chapter Assignment 2
+          </div>
+          <div
+            class="tab-pane fade"
+            id="list-message2"
+            role="tabpanel"
+            aria-labelledby="list-message2-list"
+          >
+            Chapter Assignment 1
+          </div>
+          <div
+            class="tab-pane fade"
+            id="list-message3"
+            role="tabpanel"
+            aria-labelledby="list-message3-list"
+          >
+            Final Assignment
+          </div>
+          <div
+            class="tab-pane fade"
+            id="list-message4"
+            role="tabpanel"
+            aria-labelledby="list-message4-list"
+          >
+            Final Assignment2
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
