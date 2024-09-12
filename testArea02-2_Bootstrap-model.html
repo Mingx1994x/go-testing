@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bootstrap model</title>
+    <script type="module" crossorigin src="/go-testing/assets/main-7bc623c3.js"></script>
+    <link rel="stylesheet" href="/go-testing/assets/main-8308cece.css">
+  </head>
+  <body>
+    <h1 class="header">我是 header</h1>
+
+<ul class="bg-warning list-unstyled d-flex gap-3 overflow-x-scroll">
+  <li>
+    <a href="index.html">index</a>
+  </li>
+  <li>
+    <a href="about.html">about</a>
+  </li>
+  <li>
+    <a href="testArea01_swiper.html">testArea01_Swiper</a>
+  </li>
+  <li>
+    <a href="testArea02_bootstrap.html">testArea02-1_Bootstrap-dropdown</a>
+  </li>
+  <li>
+    <a href="testArea02-2_Bootstrap-model.html">testArea02-2_Bootstrap-model</a>
+  </li>
+  <li>
+    <a href="testArea03_aos.html">testArea03_AOS</a>
+  </li>
+  <li>
+    <a href="testArea04_gsap.html">testArea04_gsap</a>
+  </li>
+  <li>
+    <a href="testArea05_chart.html">testArea05_chart</a>
+  </li>
+</ul>
+
+    <h3>model客製化測試</h3>
+    <h4>一般model</h4>
+    <div class="container">
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+      >
+        Launch static backdrop modal
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4>客製化model</h4>
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#customModel"
+    >
+      時間統計單位
+    </button>
+    <div
+      class="modal fade"
+      id="customModel"
+      tabindex="-1"
+      aria-labelledby="customModelLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog fixed-bottom m-0">
+        <div class="modal-content rounded-bottom-0">
+          <div class="modal-header">
+            <h5 class="modal-title fs-5" id="customModelLabel">時間統計單位</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-unstyled">
+              <li><a class="dropdown-item" href="#">年</a></li>
+              <li><a class="dropdown-item" href="#">月</a></li>
+              <li><a class="dropdown-item" href="#">日</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorem
+      dolore, ex maxime voluptatum eveniet sint ratione tempora asperiores
+      nesciunt quibusdam voluptatibus temporibus cumque assumenda maiores
+      doloremque autem, dignissimos veritatis?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorem
+      dolore, ex maxime voluptatum eveniet sint ratione tempora asperiores
+      nesciunt quibusdam voluptatibus temporibus cumque assumenda maiores
+      doloremque autem, dignissimos veritatis?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorem
+      dolore, ex maxime voluptatum eveniet sint ratione tempora asperiores
+      nesciunt quibusdam voluptatibus temporibus cumque assumenda maiores
+      doloremque autem, dignissimos veritatis?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorem
+      dolore, ex maxime voluptatum eveniet sint ratione tempora asperiores
+      nesciunt quibusdam voluptatibus temporibus cumque assumenda maiores
+      doloremque autem, dignissimos veritatis?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorem
+      dolore, ex maxime voluptatum eveniet sint ratione tempora asperiores
+      nesciunt quibusdam voluptatibus temporibus cumque assumenda maiores
+      doloremque autem, dignissimos veritatis?
+    </p>
+
+    
+    <script>
+      const openElement = document.querySelector(".dropdown-menu .open");
+      const secondElement = document.querySelector(".second");
+
+      openElement.addEventListener("mouseenter", () => {
+        secondElement.classList.remove("d-none");
+        secondElement.classList.add("d-block");
+      });
+
+      openElement.addEventListener("mouseleave", () => {
+        secondElement.classList.remove("d-block");
+        secondElement.classList.add("d-none");
+      });
+    </script>
+  </body>
+</html>
