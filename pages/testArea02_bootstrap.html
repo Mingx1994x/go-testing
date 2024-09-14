@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>textArea1: list-group & js action</title>
+    <title>bootstrap dropdown</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是測試區</h1>
+    <h3>dropdown</h3>
     <div class="d-flex">
       <div class="assign-menu w-25">
         <div class="topArea mb-3">
@@ -134,9 +134,337 @@
         </div>
       </div>
     </div>
+    <hr />
+    <h3>dropdown daily46 code</h3>
+    <h4>navbar collapse 與 dropdown選單結合</h4>
 
-    <%- include('./layout/footer'); -%>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <a class="navbar-brand" href="#">
+          <img
+            class="img-fluid logo"
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/logo.png?raw=true"
+            alt="LEARNING"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <!-- 修改位置 -->
+
+              <!-- dropdown 按鈕區塊 -->
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                探索
+              </a>
+              <!-- 修改位置 -->
+
+              <!-- dropdown 開始區塊 -->
+
+              <div class="dropdown-menu search-all">
+                <!-- 修改位置 -->
+                <div class="d-flex">
+                  <!-- first column -->
+                  <ul class="list-unstyled group first p-12">
+                    <li class="py-12 px-4 mb-2">探索全部</li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#"
+                        ><!-- 修改位置 -->
+                        <p>音樂</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#"
+                        ><!-- 修改位置 -->
+                        <p>攝影</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4 open" href="#"
+                        ><!-- 修改位置 -->
+                        <p>程式</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#"
+                        ><!-- 修改位置 -->
+                        <p>程式</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#"
+                        ><!-- 修改位置 -->
+                        <p>藝術</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#"
+                        ><!-- 修改位置 -->
+                        <p>人文</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#"
+                        ><!-- 修改位置 -->
+                        <p>行銷</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#"
+                        ><!-- 修改位置 -->
+                        <p>投資理財</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#"
+                        ><!-- 修改位置 -->
+                        <p>心靈成長</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#"
+                        ><!-- 修改位置 -->
+                        <p>職場技能</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#"
+                        ><!-- 修改位置 -->
+                        <p>生活品味</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#"
+                        ><!-- 修改位置 -->
+                        <p>職場技能</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#"
+                        ><!-- 修改位置 -->
+                        <p>生活品味</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#"
+                        ><!-- 修改位置 -->
+                        <p>職場技能</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#"
+                        ><!-- 修改位置 -->
+                        <p>生活品味</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- second column -->
+                  <ul class="list-unstyled group second p-12 d-none">
+                    <li class="py-12 px-4 mb-2">所有程式</li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#">
+                        <p>程式入門</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#">
+                        <p>網頁前端</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4 open" href="#">
+                        <p>網頁後端</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#">
+                        <p>網站架設</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#">
+                        <p>資訊安全</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#">
+                        <p>程式語言</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#">
+                        <p>程式語言</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#">
+                        <p>資料科學</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#">
+                        <p>人工智慧</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-12 px-4" href="#">
+                        <p>量化分析</p>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <h3>model客製化測試</h3>
+    <h4>一般model</h4>
+    <div class="container">
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+      >
+        Launch static backdrop modal
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4>客製化model</h4>
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#customModel"
+    >
+      時間統計單位
+    </button>
+    <div
+      class="modal fade"
+      id="customModel"
+      tabindex="-1"
+      aria-labelledby="customModelLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-5" id="customModelLabel">時間統計單位</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-unstyled">
+              <li><a href="#">年</a></li>
+              <li><a href="#">月</a></li>
+              <li><a href="#">日</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script type="module" src="../main.js"></script>
+    <script>
+      const openElement = document.querySelector(".dropdown-menu .open");
+      const secondElement = document.querySelector(".second");
+
+      openElement.addEventListener("mouseenter", () => {
+        secondElement.classList.remove("d-none");
+        secondElement.classList.add("d-block");
+      });
+
+      openElement.addEventListener("mouseleave", () => {
+        secondElement.classList.remove("d-block");
+        secondElement.classList.add("d-none");
+      });
+    </script>
   </body>
 </html>
