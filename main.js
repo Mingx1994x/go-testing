@@ -8,19 +8,23 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 // import AOS JS
 // import AOS from 'aos';
+// import AOS styles 
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 // import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-// import AOS styles 
-import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 // custom Swiper
-import "./src/js/custom-swiper.js";
+import "./assets/js/custom-swiper.js";
 
 // custom AOS
-import "./src/js/custom-aos.js";
+import "./assets/js/custom-aos.js";
+
+// chart.js
+import "./assets/js/custom-chart.js";
+
 
 console.log("Hello world!");

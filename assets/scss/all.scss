@@ -1,9 +1,19 @@
+// bootstrap icons
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
 @import "../../node_modules/bootstrap";
 
+// components
+@import './components/components';
+
+// layouts
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
+
+// pages
 @import './pages/index.scss';
-@import './pages/Area1'
+@import './pages/Area1';
+@import './pages/Area2';
